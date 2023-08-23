@@ -1,16 +1,21 @@
-import { Text } from "react-native"
+import React from "react";
+import { Text } from "react-native";
 
-// passando função com parametros (props)
 export default function MinMax(props) {
+    // Extrair as propriedades min e max do objeto props
+    const { min, max } = props;
 
-
-    // propriedades da função
-    const {min, max} = props;
-
-    // mostrando as propriedades na tela
-    console.warn(props);
+    // Verificar qual valor é maior e criar a mensagem
+    let message;
+    if (max > min) {
+        message = `O maior valor é max = ${max}`;
+    } else if (min > max) {
+        message = `O maior valor é min = ${min}`;
+    } else {
+        message = "Os valores são iguais";
+    }
 
     return (
-        <Text>{props.propriedades}</Text>
-    )
+        <Text>{message}</Text>
+    );
 }

@@ -1,8 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import MinMax from './components/MinMax';
-import MyComponent from './components/Mycomponent';
-
 
 export default function App() {
   return (
@@ -12,7 +10,7 @@ export default function App() {
     // Componente - View: para abrir a caixa de conteúdo
     <View style={styles.container}>
       {/*<MyComponent/>*/}
-      <MinMax min="10" max="20"/>
+      <MinMax min={10} max={20}/>
     </View>
   );
 }
