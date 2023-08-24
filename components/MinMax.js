@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function MinMax(props) {
     // Extrair as propriedades min e max do objeto props
@@ -16,6 +16,21 @@ export default function MinMax(props) {
     }
 
     return (
-        <Text>{message}</Text>
+        <View style={styles.card}>
+            <Text style={styles.text}>{message}</Text>
+        </View>
     );
+
 }
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 25,
+    },
+    card: {
+        backgroundColor: 'blue',
+        padding: 50,
+        borderRadius: 10, 
+        borderColor: 'gray',
+        borderWidth: 10
+    }
+})
