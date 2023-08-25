@@ -1,16 +1,18 @@
-
-
+import { Text } from "react-native";
 
 export default function NumeroALeatorio(props) {
-
-    const { min, max} = props
     
+    // definindo propriedades max e min
+    const { min, max} = props; 
+
+    // transformando variavel em inteira e maior que 1
     let num_aleatorio;
-    num_aleatorio = Math.random()
-    console.warn(num_aleatorio)
+    num_aleatorio = Math.floor(Math.random()*100);
+
     let message;
 
-    if (num_aleatorio > 1) and (num_aleatorio < 100) {
+    // conficional para verificar se a propriedade está de acordo
+    if (num_aleatorio > min && num_aleatorio < max) {
         message = `O número aleatório é = ${num_aleatorio}`;
     } else {
         message = "Numero invalido";
