@@ -1,13 +1,15 @@
+import { View } from "react-native";
+import { StyleSheet } from "react-native";
 import { Text } from "react-native";
 
 export default function NumeroALeatorio(props) {
-    
+
     // definindo propriedades max e min
-    const { min, max} = props; 
+    const { min, max } = props;
 
     // transformando variavel em inteira e maior que 1
     let num_aleatorio;
-    num_aleatorio = Math.floor(Math.random()*100);
+    num_aleatorio = Math.floor(Math.random() * 100);
 
     let message;
 
@@ -19,6 +21,21 @@ export default function NumeroALeatorio(props) {
     }
 
     return (
-        <Text>{message}</Text>
+        <View style={styles.card}>
+            <Text style={styles.text}>{message}</Text>
+        </View>
     )
-}
+} 
+
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 25,
+    },
+    card: {
+        backgroundColor: 'blue',
+        padding: 50,
+        borderRadius: 10,
+        borderColor: 'gray',
+        borderWidth: 10
+    }
+})
