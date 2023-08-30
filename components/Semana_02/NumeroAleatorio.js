@@ -18,6 +18,7 @@ export default function NumeroALeatorio(props) {
         message = `O número aleatório é = ${num_aleatorio}`;
     } else {
         message = "Numero invalido";
+        console.warn(`O número ${num_aleatorio} é inválido`)
     }
 
     return (
