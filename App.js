@@ -9,6 +9,12 @@ import NumAleatorio2 from './components/semana_03/NumAleatorio2';
 import Botao from './components/semana_03/Botao';
 import Contador from './components/semana_03/Contador';
 import DigiteSeuNome from './components/semana_03/DigiteSeuNome';
+// import Pai from './components/semana_04/comunicacao_direta/Pai';
+import Pai from './components/semana_04/comunicacao_indireta/Pai';
+import ComponenteControlado from './components/semana_04/ComponenteControlado';
+import Familia from './components/semana_04/children/Familia';
+import Filho from './components/semana_04/children/Filho';
+
 
 export default function App() {
   return (
@@ -26,7 +32,16 @@ export default function App() {
       {/* <NumAleatorio2 min={1} max={100}/> */}
       {/* <Botao/> */}
       {/* <Contador/> */}
-      <DigiteSeuNome/>
+      {/* <DigiteSeuNome/> */}
+      {/* <Pai/> */}
+      {/* <ComponenteControlado/> */}
+      <Familia nomeFamilia="Silva">
+        <Filho nome="Pedro" sobreNome="Silva"></Filho>
+        <Filho nome="João" sobreNome="Silva"></Filho>
+        <Filho nome="Davi" sobreNome="Silva"></Filho>
+        <Filho nome="Maria" sobreNome="Silva"></Filho>
+        <Filho nome="Carla" sobreNome="Silva"></Filho>
+      </Familia>
     </View>
   );
 }
