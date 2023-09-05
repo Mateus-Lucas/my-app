@@ -14,6 +14,8 @@ import Pai from './components/semana_04/comunicacao_indireta/Pai';
 import ComponenteControlado from './components/semana_04/ComponenteControlado';
 import Familia from './components/semana_04/children/Familia';
 import Filho from './components/semana_04/children/Filho';
+import FrasesBiscoito from './components/Biscoito_Sorte/FrasesBiscoito';
+import BiscoitoSorte from './components/Biscoito_Sorte/BiscoitoSorte';
 
 
 export default function App() {
@@ -35,13 +37,14 @@ export default function App() {
       {/* <DigiteSeuNome/> */}
       {/* <Pai/> */}
       {/* <ComponenteControlado/> */}
-      <Familia nomeFamilia="Silva">
+      {/* <Familia nomeFamilia="Silva">
         <Filho nome="Pedro" sobreNome="Silva"></Filho>
         <Filho nome="João" sobreNome="Silva"></Filho>
         <Filho nome="Davi" sobreNome="Silva"></Filho>
         <Filho nome="Maria" sobreNome="Silva"></Filho>
         <Filho nome="Carla" sobreNome="Silva"></Filho>
-      </Familia>
+      </Familia> */}
+      <BiscoitoSorte/>
     </View>
   );
 }
