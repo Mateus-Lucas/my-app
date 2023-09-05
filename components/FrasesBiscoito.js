@@ -1,5 +1,3 @@
-import react from "react";
-
 const FrasesBiscoito = [
     "A sorte está a seu favor hoje.",
     "Grandes oportunidades estão a caminho.",

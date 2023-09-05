@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Text, View, Button, Image } from 'react-native'; // Certifique-se de importar o componente Image
-import frasesDoBiscoito from './FrasesBiscoito'; // Importe o array de frases
-import imagemBiscoitoQuebrado from './biscoito_quebrado.jpg'; // Atualize o caminho para suas imagens
-import imagemBiscoitoInteiro from './biscoito_inteiro.png';
+import { Text, View, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import frasesDoBiscoito from './FrasesBiscoito';
+import imagemBiscoitoQuebrado from '../assets/biscoito_quebrado.png';
+import imagemBiscoitoInteiro from '../assets/biscoito_inteiro.png';
 
 export default function BiscoitoSorte() {
   const [frase, setFrase] = useState('');
@@ -11,7 +11,7 @@ export default function BiscoitoSorte() {
 
   const exibirFraseAleatoria = () => {
     setBotaoBloqueado(true);
-    setBiscoitoQuebrado(true); // Define o biscoito como quebrado
+    setBiscoitoQuebrado(true);
     const indiceAleatorio = Math.floor(Math.random() * frasesDoBiscoito.length);
     const fraseAleatoria = frasesDoBiscoito[indiceAleatorio];
     setFrase(fraseAleatoria);
@@ -20,7 +20,7 @@ export default function BiscoitoSorte() {
   const reiniciarBiscoito = () => {
     setFrase('');
     setBotaoBloqueado(false);
-    setBiscoitoQuebrado(false); // Define o biscoito como não quebrado
+    setBiscoitoQuebrado(false);
   };
 
   return (
@@ -30,16 +30,37 @@ export default function BiscoitoSorte() {
         style={{ width: 150, height: 150 }}
       />
       <Text>{frase}</Text>
-      <Button
-        title="Quebrar Biscoito"
+      <TouchableOpacity
+        style={styles.button}
         onPress={exibirFraseAleatoria}
         disabled={botaoBloqueado}
-      />
-      <Button
-        title="Reiniciar Biscoito"
+      >
+        <Text style={styles.buttonText}>Quebrar Biscoito</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
         onPress={reiniciarBiscoito}
         disabled={!botaoBloqueado}
-      />
+      >
+        <Text style={styles.buttonText}>Reiniciar Biscoito</Text>
+      </TouchableOpacity>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  button: {
+    padding: 8,
+    borderRadius: 3,
+    backgroundColor: '#ffffff',
+    marginTop: 20,
+    backgroundColor: 'red',
+  },
+  restartButton: {
+    backgroundColor: 'transparent', // Botão de reinício tem fundo transparente
+  },
+  buttonText: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+});

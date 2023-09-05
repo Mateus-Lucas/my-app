@@ -14,8 +14,7 @@ import Pai from './components/semana_04/comunicacao_indireta/Pai';
 import ComponenteControlado from './components/semana_04/ComponenteControlado';
 import Familia from './components/semana_04/children/Familia';
 import Filho from './components/semana_04/children/Filho';
-import FrasesBiscoito from './components/Biscoito_Sorte/FrasesBiscoito';
-import BiscoitoSorte from './components/Biscoito_Sorte/BiscoitoSorte';
+import BiscoitoSorte from './components/BiscoitoSorte';
 
 
 export default function App() {
@@ -52,7 +51,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
+    backgroundColor: '',
     alignItems: 'center',
     justifyContent: 'center'
   },
