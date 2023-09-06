@@ -15,6 +15,8 @@ import ComponenteControlado from './components/semana_04/ComponenteControlado';
 import Familia from './components/semana_04/children/Familia';
 import Filho from './components/semana_04/children/Filho';
 import BiscoitoSorte from './components/BiscoitoSorte';
+import ParOuImpar from './components/semana_04/ParOuImpar';
+import IntroducaoEstilos from './components/semana_04/IntroducaoEstilos';
 
 
 export default function App() {
@@ -36,14 +38,16 @@ export default function App() {
       {/* <DigiteSeuNome/> */}
       {/* <Pai/> */}
       {/* <ComponenteControlado/> */}
-      {/* <Familia nomeFamilia="Silva">
+       {/* <Familia nomeFamilia="Silva">
         <Filho nome="Pedro" sobreNome="Silva"></Filho>
         <Filho nome="João" sobreNome="Silva"></Filho>
         <Filho nome="Davi" sobreNome="Silva"></Filho>
         <Filho nome="Maria" sobreNome="Silva"></Filho>
         <Filho nome="Carla" sobreNome="Silva"></Filho>
-      </Familia> */}
-      <BiscoitoSorte/>
+      </Familia>  */}
+       {/* <BiscoitoSorte/> */}
+      {/* <ParOuImpar numero={10}/> */}
+      <IntroducaoEstilos/>
     </View>
   );
 }
@@ -51,7 +55,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center'
   },
