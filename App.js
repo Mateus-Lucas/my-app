@@ -17,46 +17,13 @@ import Filho from './components/semana_04/children/Filho';
 import BiscoitoSorte from './components/BiscoitoSorte';
 import ParOuImpar from './components/semana_04/ParOuImpar';
 import IntroducaoEstilos from './components/semana_04/IntroducaoEstilos';
+import Profile from './components/Profile';
 
 
 export default function App() {
   return (
-    // Fragmento para estilizar (precisa de importações)
-    // <React.Fragment></React.Fragment>
-
-    // Componente - View: para abrir a caixa de conteúdo
-    <View style={styles.container}>
-      {/* <MyComponent/> */}
-      {/* <MinMax min={10} max={20}/> */}
-      {/* <MyComponent/> */}
-      {/* <MyComponent2/> */}
-      {/* <MyComponent3/> */}
-      {/* <NumeroALeatorio min={1} max={100}/>  */}
-      {/* <NumAleatorio2 min={1} max={100}/> */}
-      {/* <Botao/> */}
-      {/* <Contador/> */}
-      {/* <DigiteSeuNome/> */}
-      {/* <Pai/> */}
-      {/* <ComponenteControlado/> */}
-       {/* <Familia nomeFamilia="Silva">
-        <Filho nome="Pedro" sobreNome="Silva"></Filho>
-        <Filho nome="João" sobreNome="Silva"></Filho>
-        <Filho nome="Davi" sobreNome="Silva"></Filho>
-        <Filho nome="Maria" sobreNome="Silva"></Filho>
-        <Filho nome="Carla" sobreNome="Silva"></Filho>
-      </Familia>  */}
-       {/* <BiscoitoSorte/> */}
-      {/* <ParOuImpar numero={10}/> */}
-      <IntroducaoEstilos/>
-    </View>
+      <Profile genero='Feminino' nome='Fernanda' telefone='682-245-854' email='fernloptes@gmai.com'/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-});
+const styles = StyleSheet.create({});
