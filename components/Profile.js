@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     img: {
         width: 170,
         height: 170,
-        borderRadius: 80,
+        borderRadius: 100,
         borderWidth: 2,
         borderColor: 'red',
         marginBottom: 25
@@ -34,15 +34,14 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: 'red',
         padding: 20,
-        borderRadius: 5,
+        borderRadius: 20,
         width: '90%', 
         marginBottom: 10, 
+        fontWeight: 'bold'
     },
     textContainer: {
-        flexDirection: 'column', 
         alignItems: 'center',
         width: '100%', 
-        justifyContent: ''
     },
     container: {
         flex: 1,
