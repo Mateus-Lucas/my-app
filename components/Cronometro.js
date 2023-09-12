@@ -96,6 +96,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'gray'
   },
   buttonContainer: {
     width: '50%',
@@ -115,9 +116,12 @@ const styles = StyleSheet.create({
   },
   textCustom: {
     fontSize: 90,
+    backgroundColor: 'gray',
+    color: '#FFF'
   },
   ultimoTempo: {
     fontSize: 30,
     marginTop: 10,
-  },
+    color: '#FFF'
+  }
 });

@@ -18,7 +18,7 @@ import BiscoitoSorte from './components/BiscoitoSorte';
 import ParOuImpar from './components/semana_04/ParOuImpar';
 import IntroducaoEstilos from './components/semana_04/IntroducaoEstilos';
 import Profile from './components/Profile';
-import Cronometro from './Cronometro';
+import Cronometro from './components/Cronometro';
 
 
 export default function App() {
