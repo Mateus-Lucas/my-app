@@ -18,11 +18,13 @@ import BiscoitoSorte from './components/BiscoitoSorte';
 import ParOuImpar from './components/semana_04/ParOuImpar';
 import IntroducaoEstilos from './components/semana_04/IntroducaoEstilos';
 import Profile from './components/Profile';
+import Cronometro from './Cronometro';
 
 
 export default function App() {
   return (
-      <Profile genero='Feminino' nome='Fernanda' telefone='682-245-854' email='fernloptes@gmai.com'/>
+    // <Profile genero='Feminino' nome='Fernanda' telefone='682-245-854' email='fernloptes@gmai.com'/>
+    <Cronometro />
   );
 }
 
