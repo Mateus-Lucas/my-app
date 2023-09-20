@@ -17,14 +17,17 @@ import Filho from './components/semana_04/children/Filho';
 import BiscoitoSorte from './components/BiscoitoSorte';
 import ParOuImpar from './components/semana_04/ParOuImpar';
 import IntroducaoEstilos from './components/semana_04/IntroducaoEstilos';
-import Profile from './components/Profile';
+import Profile from './src/screens/profile/Profile';
 import Cronometro from './components/Cronometro';
+import Router from './src/routes/Router';
+
 
 
 export default function App() {
   return (
     // <Profile genero='Feminino' nome='Fernanda' telefone='682-245-854' email='fernloptes@gmai.com'/>
-    <Cronometro />
+    //<Cronometro />
+    <Router/>
   );
 }
 
